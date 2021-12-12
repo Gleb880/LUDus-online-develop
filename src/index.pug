@@ -6,10 +6,10 @@ html(lang="ru")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet")
-        link(rel="stylesheet" href="/LUDus-online/static/css/reset.css")
-        link(rel="stylesheet" href="/LUDus-online/static/js/libs/gallery.css")
-        link(rel="stylesheet" href="/LUDus-online/static/css/index.css")
-        script(src="/LUDus-online/static/js/libs/gallery.js")
+        link(rel="stylesheet" href="/LUDus-online-develop/static/css/reset.css")
+        link(rel="stylesheet" href="/LUDus-online-develop/static/js/libs/gallery.css")
+        link(rel="stylesheet" href="/LUDus-online-develop/static/css/index.css")
+        script(src="/LUDus-online-develop/static/js/libs/gallery.js")
     body
         header.header 
             .header__content
@@ -49,10 +49,10 @@ html(lang="ru")
                         li.social-networks__item
                             a.social-networks__link(href="#")
                                 .icon__facebook
-                .scroll-down 
+                .scroll-down#scroll-action
                     | Scroll down 
                     .scroll-down__icon.icon__arrow_downward
-            .content 
+            .content#scroll-to
                 section.section.section-cols 
                     img.section-col.section-col__image(src="/LUDus-online/static/images/enjoy.jpg" alt="Fields")
                     .section-col.section-col__content
