@@ -56,13 +56,13 @@ scrollDownButton.addEventListener('click', () => {
     stopAnimationScroll();
 
     currentScroll = window.scrollY;
-    startAnimationScroll(scrollToNode.offsetTop - 80);
+    startAnimationScroll(scrollToNode.offsetTop);
 });
 
 function startAnimationScroll(newScrollY) {
     const deltaScroll = (newScrollY - currentScroll);
 
-    currentScroll += deltaScroll * 0.05;
+    currentScroll += deltaScroll * 0.15;
     window.scrollTo(0, currentScroll);
 
     if (Math.abs(deltaScroll) > 1) {
